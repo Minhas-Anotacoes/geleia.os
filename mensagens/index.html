@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="author" content="Emilly Sasaki">
+    <meta name="description" content="Aplicativo de mensagens do jogo">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/ec92409f57.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Mensagem</title>
+</head>
+
+<body>
+    <div class="celular">
+        <div class="painel">
+            <div class="icon-apps">
+                <i class="fa-regular fa-comment" style="color: #eee;"></i>
+                <i class="fa-brands fa-bluesky" style="color: #eee;"></i>
+                <i class="fa-solid fa-phone-slash" style="color: #eee;"></i>
+            </div>
+            <div class="sinais">
+                <i class="fa-solid fa-signal" style="color: #eee;"></i>
+                <i class="fa-solid fa-wifi" style="color: #eee;"></i>
+                <span>12:00</span>
+            </div>
+        </div>
+        <div class="grupo">
+            <div class="informacoes-grupo">
+                <div class="voltar-grupo">
+                    <i class="fa-solid fa-arrow-left fa-xl" style="color: #eee;"></i>
+                </div>
+                <div class="detalhes-grupo">
+                    <h3 style="margin-bottom: 2px; font-size: 18px;">Nome do grupo</h3>
+                    <p style="margin-top: 0; font-size: 12px;"><em>Descrição do grupo</em></p>
+                </div>
+                <div class="foto-grupo">
+                    <img src="https://image.cdn2.seaart.ai/2023-08-28/15564263557962757/51fb263b73d7a884b203ef00b3a9ca15fe4921c0_high.webp"
+                        alt="gatinho" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="mensagens-pessoa">
+                <div class="balao-pessoa">
+                    <h4>Pessoa</h4>
+                    <p>Bla bla bla bla</p>
+                </div>
+                <div class="balao-pessoa">
+                    <p>Bla bla bla bla Bla bla bla blaBla bla bla blaBla bla bla blaBla bla bla blaBla bla bla blaBla
+                        bla bla blaBla bla bla blaBla bla bla blaBla bla bla blaBla bla bla bla<br>Bla bla bla blaBla
+                        bla bla blaBla bla bla bla</p>
+                </div>
+            </div>
+            <div class="mensagens-eu">
+                <div class="balao-eu">
+                    <p>Ble ble ble ble Ble ble ble ble Ble ble ble ble Ble ble ble ble Ble ble ble ble Ble ble ble ble
+                        Ble ble ble ble Ble ble ble ble</p>
+                </div>
+                <a class="esconder" href="#escolha-a" target="_self">
+                    <div class="balao-eu escolha">
+                        <p>Escolha A</p>
+                    </div>
+                </a>
+                <div id="escolha-a" class="balao-eu">
+                    <p>oi, sou A</p>
+                    <p>E aí?</p>
+                </div>
+                <a class="esconder" href="#escolha-b" target="_self">
+                    <div class="balao-eu escolha">
+                        <p>Escolha B</p>
+                    </div>
+                </a>
+                <div id="escolha-b" class="balao-eu">
+                    <p>oi, sou B</p>
+                </div>
+            </div>
+        </div>
+        <div class="enviar">
+            <p class="caixa-texto">Mensagem</p>
+            <i class="fa-solid fa-paper-plane fa-lg botao-enviar" style="color: #8ccc9a;"></i>
+        </div>
+        <div class="botoes">
+            <div class="botao">
+                <i class="fa-solid fa-caret-left fa-2x" style="color: #a2a2a2;"></i>
+            </div>
+            <div class="separador"></div>
+            <div class="botao">
+                <i class="fa-regular fa-circle-dot fa-xl" style="color: #a2a2a2;"></i>
+            </div>
+            <div class="separador"></div>
+            <div class="botao">
+                <i class="fa-solid fa-stop fa-xl" style="color: #a2a2a2;"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
