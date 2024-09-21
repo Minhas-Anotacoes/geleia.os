@@ -49,15 +49,14 @@
             </div>
         </div>
         <div class="chat">
-            <div class="mensagens-eu escolhas">
-                <a class="balao escolha" style="--i: 0;" href="#escolha-a-01" target="_self">
-                    <p>O que aconteceu com o Alex?</p>
-                </a>
-                <a class="balao escolha" style="--i: 0;" href="#escolha-b-01" target="_self">
-                    <p>Miga, me diz aí que rolo é esse no grupo.</p>
-                </a>
+            <div id="escolha-inicio">
+                <div class="mensagens-eu escolhas inicio-grupo">
+                    <a class="balao escolha" style="--i: 0;" href="#escolha-a-01" target="_self">
+                        <p>Miga, me diz aí que rolo é esse no grupo.</p>
+                    </a>
+                </div>
             </div>
-            <div id="escolha-a-01">
+            <div id="escolha-a-01" class="comeco">
                 <div class="mensagens-eu">
                     <div class="balao" style="--i: 0;">
                         <p>O que aconteceu com o Alex?</p>
@@ -69,8 +68,42 @@
                         <p>O Alex simplesmente sumiu. Faz uns dois dias já que ninguém tá conseguindo falar com ele.</p>
                     </div>
                 </div>
+                <div class="mensagens-eu escolhas">
+                    <a class="balao escolha" style="--i: 2;" href="#escolha-a-02a" target="_self">
+                        <p>Nossa. Mas pq será que ele desapareceu?</p>
+                    </a>
+                    <a class="balao escolha" style="--i: 2;" href="#escolha-b-02a" target="_self">
+                        <p>Como assim?</p>
+                    </a>
+                </div>
+                <div id="escolha-a-02a">
+                    <div class="mensagens-eu">
+                        <div class="balao" style="--i: 0;">
+                            <p>Nossa. Mas pq será que ele desapareceu?</p>
+                        </div>
+                    </div>
+                    <div class="mensagens-pessoa">
+                        <div class="balao" style="--i: 1;">
+                            <h4 style="color: palevioletred;">Daniela</h4>
+                            <p>Se eu soubesse, te falava. Não tenho a menor ideia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="escolha-b-02a">
+                    <div class="mensagens-eu">
+                        <div class="balao" style="--i: 0;">
+                            <p>Como assim?</p>
+                        </div>
+                    </div>
+                    <div class="mensagens-pessoa">
+                        <div class="balao" style="--i: 1;">
+                            <h4 style="color: palevioletred;">Daniela</h4>
+                            <p>Se eu soubesse, te falava. Não tenho a menor ideia.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="escolha-b-01">
+            <div id="escolha-b-01" class="comeco">
                 <div class="mensagens-eu">
                     <div class="balao" style="--i: 0;">
                         <p>Miga, me diz aí que rolo é esse no grupo.</p>

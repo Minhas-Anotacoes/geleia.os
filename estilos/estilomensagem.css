@@ -99,28 +99,15 @@ h4 {
     overflow: scroll;
 }
 
-.mensagens-pessoa {
+.mensagens-pessoa, .mensagens-eu {
     margin: 0px 20px;
 }
 
 .mensagens-eu {
-    margin: 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-
-/* .balao-pessoa {
-    background-color: #566f5b;
-    box-shadow: 0 4px 4px 0 #00000040;
-    border-radius: 10px;
-    padding: 5px 20px;
-    margin: 10px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    max-width: 70%;
-} */
 
 .nome-pessoa {
     box-shadow: 0 1px 4px 0 #00000040;
@@ -163,6 +150,50 @@ strong {
 .escolha:active {
     border: solid 2px #cacaca;
     background-color: #436154;
+}
+
+div.comeco {
+    display: none;
+}
+
+.escolhas:has(+ [id^="escolha-a"]:target),
+.escolhas:has(+ * + [id^="escolha-b"]:target),
+[id^="escolha-"]:target [id^="escolha-"],
+[id^="escolha-"]:target ~ [id^="escolha-"]
+{
+    display: none;
+}
+
+:target[id^="escolha-"],
+div[id^="escolha"]:is(:has(~ div[id^="escolha-a"]:target)),
+[id^="escolha-"]:has(> [id^="escolha-"]:target)
+ {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.inicio-grupo.escolhas{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.escolhas
+{
+    display: none;
+}
+
+[id^="escolha-"]:target .escolhas{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+/* .chat.inicio[id^="escolha-"]:target   */
+[id^="escolha-"]:target:has(~.escolhas) 
+{
+    display: none;
 }
 
 .enviar {
@@ -214,16 +245,3 @@ strong {
     margin: 10px 20px;
 }
 
-.escolhas:has(+ [id^="escolha-a"]:target),
-.escolhas:has(+ * + [id^="escolha-b"]:target),
-[id^="escolha-"]
-{
-    display: none;
-}
-
-:target[id^="escolha-"]
- {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-}
