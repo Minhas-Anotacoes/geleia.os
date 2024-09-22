@@ -158,7 +158,8 @@ div.comeco {
 .escolhas:has(+ [id^="escolha-a"]:target),
 .escolhas:has(+ * + [id^="escolha-b"]:target),
 [id^="escolha-"]:target [id^="escolha-"],
-[id^="escolha-"]:target ~ [id^="escolha-"]
+[id^="escolha-"]:target ~ [id^="escolha-"],
+.antes-b:has(+ #escolha-9l0r0f176:target)
 {
     display: none;
 }
