@@ -61,6 +61,8 @@ a>p {
     background-color: black;
     height: 100%;
     overflow: scroll;
+    overflow-y: auto;
+    scroll-behavior: smooth;
     scrollbar-width: none;
 }
 
