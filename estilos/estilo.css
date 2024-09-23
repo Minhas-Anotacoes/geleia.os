@@ -86,7 +86,7 @@ a>p {
     margin: 10px 20px;
 }
 
-#app-aberto {
+#app-aberto, #app-manutencao {
     visibility: hidden;
     background-color: #eee;
     color: #000;
@@ -100,7 +100,7 @@ a>p {
     opacity: 0;
 }
 
-#app-aberto:target {
+#app-aberto:target, #app-manutencao:target {
     animation-duration: 4s;
     animation-name: fade-in;
     /* visibility: visible;
