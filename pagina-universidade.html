@@ -10,11 +10,18 @@
 
     <style>
         div {
-            display: flex;
+            /* display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center; */
             /* height: 100%; */
             /* width: 100%; */
+        }
+
+        @media (max-width: 800px) {
+            img {
+                height: 100%;
+                width: auto;
+            }
         }
 
     </style>
@@ -26,8 +33,8 @@
 <body>
     <div>
         <!-- <embed src="./imagens/ufgl-ensina.pdf" width="1190" height="900" frameborder="0" allowfullscreen> -->
-        <object data="./imagens/ufgl-ensina.pdf" type="application/pdf" width="100%" height="900">
-            <img src="./imagens/ufgl-ensina.png" alt="Tutorial de como ">
+        <object data="./imagens/ufgl-ensina.pdf" type="application/pdf">
+            <img src="./imagens/ufgl-ensina.png" alt="Tutorial de como " width="100%">
         </object>
     </div>
 </body>
